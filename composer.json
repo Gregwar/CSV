@@ -1,0 +1,23 @@
+{
+    "name": "gregwar/csv",
+    "description": "CSV handling",
+    "keywords": ["csv"],
+    "homepage": "https://github.com/Gregwar/CSV",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Grégoire Passault",
+            "email": "g.passault@gmail.com",
+            "homepage": "http://www.gregwar.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "target-dir": "Gregwar/CSV",
+    "autoload": {
+        "psr-0": {
+            "Gregwar\\CSV": ""
+        }
+    }
+}
