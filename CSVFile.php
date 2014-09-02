@@ -50,7 +50,7 @@ class CSVFile
     public function load($filename)
     {
         $data = array();
-        $file = fopen($filename, 'r');
+        $file = @fopen($filename, 'r');
 
         if ($file) {
             while ($row = fgetcsv($file)) {
@@ -68,7 +68,7 @@ class CSVFile
      */
     public function save($filename, array $data)
     {
-        $file = fopen($filename, 'w');
+        $file = @fopen($filename, 'w');
 
         if ($file) {
             foreach ($data as $row) {
